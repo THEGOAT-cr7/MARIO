@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lazzat Restorani</title>
+    <link rel="stylesheet" href="./src/css/style.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>MARIO</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#bosh">Bosh sahifa</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#galereya">Galereya</a></li>
+            <li><a href="#oshpazlar">Oshpazlar</a></li>
+            <li><a href="#biz-haqimizda">Biz haqimizda</a></li>
+            <li><a href="#aloqa">Aloqa</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Reklama bo'limi -->
+    <div class="side-ad" id="sideAd">
+      <div class="ad-content">
+        <button class="close-btn" id="closeSideAdBtn">
+          <i class="fas fa-times"></i>
+        </button>
+        <h3>Bosh hamkorimiz!</h3>
+        <img src="src/images/mango.png" alt="Maxsus taklif" />
+        <!-- <p>Har shanba va yakshanba kunlari oilaviy tashrif buyursangiz 15% chegirma!</p> -->
+        <a href="https://www.instagram.com/mango_torti/" class="btn-small"
+          >Batafsil</a
+        >
+      </div>
+    </div>
+
+    <section class="hero" id="bosh">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h2>Salom, <span class="typed-text"></span></h2>
+            <p>Farg'onaning eng mazali taomlarini bizda tatib ko'ring</p>
+            <a href="#menu" class="btn">Menuni ko'rish</a>
+          </div>
+          <div class="hero-slider">
+            <div class="slider-container">
+              <div class="slide active">
+                <img src="src/images/hero.jpg" alt="mario" />
+              </div>
+              <div class="slide">
+                <img src="src/images/hero2.jpg" alt="mario" />
+              </div>
+              <div class="slide">
+                <img src="src/images/hero3.jpg" alt="mario" />
+              </div>
+              <div class="slide">
+                <img src="src/images/hero4.jpg" alt="mario" />
+              </div>
+            </div>
+            <div class="slider-controls">
+              <div class="slider-dot active" data-index="0"></div>
+              <div class="slider-dot" data-index="1"></div>
+              <div class="slider-dot" data-index="2"></div>
+              <div class="slider-dot" data-index="3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Yangiliklar bo'limi -->
+    <div class="news-alert" id="newsAlert">
+      <div class="container">
+        <div class="news-content">
+          <i class="fas fa-bullhorn"></i>
+          <p>
+            Yangilik: Lazzat restorani 10-yillik yubileyini nishonlayapti! 15-20
+            iyun kunlari barcha taomlar 20% chegirma bilan!
+          </p>
+        </div>
+        <button class="close-btn" id="closeNewsBtn">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+
+    <section class="features">
+      <div class="container">
+        <div class="feature">
+          <i class="fas fa-utensils"></i>
+          <h3>Fast Food</h3>
+          <p>Eng mazali taomlarni professional oshpazlarimiz tayyorlaydi</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-clock"></i>
+          <h3>Tez xizmat</h3>
+          <p>Buyurtmangiz 20 daqiqa ichida tayyor bo'ladi</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Qulay joylashuv</h3>
+          <p>Shahar markazida joylashgan qulay restoran</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="container">
+        <h2 class="section-title">Bizning Menu</h2>
+        <div class="menu-categories">
+          <button class="menu-category active" data-category="all">
+            Hammasi
+          </button>
+          <button class="menu-category" data-category="main">
+            Asosiy taomlar
+          </button>
+          <button class="menu-category" data-category="salad">Salatlar</button>
+          <button class="menu-category" data-category="dessert">
+            Shirinliklar
+          </button>
+          <button class="menu-category" data-category="drink">
+            Ichimliklar
+          </button>
+        </div>
+        <div class="menu-items">
+          <div class="menu-item" data-category="main">
+            <img src="./src/images/hamb.jpg" alt="gamburger" />
+            <div class="menu-item-info">
+              <h3>Gamburger</h3>
+              <p>Maxsus retsept bo'yicha tayyorlangan gamburger</p>
+              <span class="price">25,000 so'm</span>
+            </div>
+          </div>
+          <div class="menu-item" data-category="main">
+            <img src="./src/images/bestfood.jpg" alt="bestfood" />
+            <div class="menu-item-info">
+              <h3>Best Food</h3>
+              <p>Maxsus retsept bilan tayyorlangan fast food.</p>
+              <span class="price">40,000 so'm</span>
+            </div>
+          </div>
+          <div class="menu-item" data-category="dessert">
+            <img src="./src/images/cake.jpg" alt="cake" />
+            <div class="menu-item-info">
+              <h3>To'rt</h3>
+              <p>Tabassum ulashuvchi rang-barang kremli cake.</p>
+              <span class="price">170,000 so'm</span>
+            </div>
+          </div>
+          <div class="menu-item" data-category="main">
+            <img src="./src/images/sandwich.jpg" alt="sandwich" />
+            <div class="menu-item-info">
+              <h3>Sandwich</h3>
+              <p>Maxsus retsept bilan tayyorlangan sandwich</p>
+              <span class="price">35,000 so'm</span>
+            </div>
+          </div>
+          <div class="menu-item" data-category="salad">
+            <img src="src/images/norin.jpg" alt="norin" />
+            <div class="menu-item-info">
+              <h3>Norin</h3>
+              <p>An'anaviy taom!</p>
+              <span class="price">20,000 so'm</span>
+            </div>
+          </div>
+          <div class="menu-item" data-category="dessert">
+            <img src="src/images/icecram.jpg" alt="Ko'k choy" />
+            <div class="menu-item-info">
+              <h3>Muzqaymoq</h3>
+              <p>Banan, qulpnay va qaymoqli muzqaymoqlar to'plami!</p>
+              <span class="price">10,000 so'm</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galereya bo'limi -->
+    <section class="gallery" id="galereya">
+      <div class="container">
+        <h2 class="section-title">Galereya</h2>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img src="src/images/inter.png" alt="Restoran interyeri" />
+            <div class="gallery-overlay">
+              <span>Restoran interyeri</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="src/images/menu.jpg" alt="Milliy taomlar" />
+            <div class="gallery-overlay">
+              <span>Taomlar</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="src/images/wed.png" alt="Banket zali" />
+            <div class="gallery-overlay">
+              <span>Banket zali</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="src/images/kids.png" alt="Yozgi maydoncha" />
+            <div class="gallery-overlay">
+              <span>Bolalar maydonchasi</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="src/images/progrss.png" alt="Taom tayyorlash jarayoni" />
+            <div class="gallery-overlay">
+              <span>Taom tayyorlash jarayoni</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="src/images/holidays.png" alt="Bayramlar" />
+            <div class="gallery-overlay">
+              <span>Bayramlar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Oshpazlar bo'limi -->
+    <section class="chefs" id="oshpazlar">
+      <div class="container">
+        <h2 class="section-title">Bizning Oshpazlar</h2>
+        <div class="chefs-slider-wrapper">
+          <button class="chef-slider-btn prev-btn">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="chefs-slider-container">
+            <div class="chefs-slider">
+              <div class="chef-card">
+                <img src="src/images/chef.jpg" alt="Oshpaz Alisher" />
+                <div class="chef-info">
+                  <h3>Alisher Karimov</h3>
+                  <p class="chef-title">Bosh oshpaz</p>
+                  <p class="chef-desc">
+                    15 yillik tajribaga ega. Milliy taomlar bo'yicha mutaxassis.
+                  </p>
+                  <div class="chef-social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="chef-card">
+                <img src="src/images/chefgirl.png" alt="Oshpaz Dilnoza" />
+                <div class="chef-info">
+                  <h3>Dilnoza Rahimova</h3>
+                  <p class="chef-title">Shirinliklar bo'yicha mutaxassis</p>
+                  <p class="chef-desc">
+                    10 yillik tajriba. Yevropa va sharq shirinliklari bo'yicha
+                    mutaxassis.
+                  </p>
+                  <div class="chef-social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="chef-card">
+                <img src="src/images/chef2.jpg" alt="Oshpaz Jahongir" />
+                <div class="chef-info">
+                  <h3>Jahongir Toshmatov</h3>
+                  <p class="chef-title">Milliy taomlar oshpazi</p>
+                  <p class="chef-desc">
+                    12 yillik tajriba. O'zbek milliy taomlari bo'yicha
+                    mutaxassis.
+                  </p>
+                  <div class="chef-social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="chef-card">
+                <img src="src/images/chefgirl2.png" alt="Oshpaz Malika" />
+                <div class="chef-info">
+                  <h3>Malika Azizova</h3>
+                  <p class="chef-title">Salatlar bo'yicha mutaxassis</p>
+                  <p class="chef-desc">
+                    8 yillik tajriba. Yevropa va sharq salatlari bo'yicha
+                    mutaxassis.
+                  </p>
+                  <div class="chef-social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="chef-card">
+                <img src="src/images/chef.jpg" alt="Oshpaz Rustam" />
+                <div class="chef-info">
+                  <h3>Rustam Qodirov</h3>
+                  <p class="chef-title">Yevropa taomlari oshpazi</p>
+                  <p class="chef-desc">
+                    11 yillik tajriba. Italiya va Fransiya taomlari bo'yicha
+                    mutaxassis.
+                  </p>
+                  <div class="chef-social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="chef-card">
+                <img src="src/images/chefgirl3.png" alt="Oshpaz Gulnora" />
+                <div class="chef-info">
+                  <h3>Gulnora Karimova</h3>
+                  <p class="chef-title">Nonvoy</p>
+                  <p class="chef-desc">
+                    20 yillik tajriba. Turli xil non va pishiriqlar bo'yicha
+                    mutaxassis.
+                  </p>
+                  <div class="chef-social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="chef-card">
+                <img src="src/images/chef4.jpg" alt="Oshpaz Bobur" />
+                <div class="chef-info">
+                  <h3>Bobur Saidov</h3>
+                  <p class="chef-title">Go'sht taomlari oshpazi</p>
+                  <p class="chef-desc">
+                    14 yillik tajriba. Turli xil go'sht taomlari bo'yicha
+                    mutaxassis.
+                  </p>
+                  <div class="chef-social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="chef-slider-btn next-btn">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        <div class="chef-slider-dots"></div>
+      </div>
+    </section>
+
+    <section class="about" id="biz-haqimizda">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-image">
+            <img src="src/images/aboutt.png" alt="Restoran ko'rinishi" />
+          </div>
+          <div class="about-text">
+            <h2 class="section-title">Biz haqimizda</h2>
+            <p>
+              Lazzat restorani 2020-yildan beri mijozlarga xizmat ko'rsatib
+              kelmoqda. Bizning maqsadimiz - eng sifatli va mazali taomlarni
+              taqdim etish.
+            </p>
+            <p>
+              Professional oshpazlarimiz har bir taomni alohida e'tibor bilan
+              tayyorlaydilar. Biz faqat eng yangi va sifatli mahsulotlardan
+              foydalanamiz.
+            </p>
+            <p>
+              Bizning restoranda oilaviy bayramlar, to'ylar va turli tadbirlarni
+              o'tkazish uchun alohida zallar mavjud.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <h2 class="section-title">Mijozlarimiz fikrlari</h2>
+        <div class="testimonials-slider">
+          <div class="testimonial active">
+            <div class="testimonial-text">
+              <p>
+                "Eng mazali o'zbek oshini shu yerda tatib ko'rdim. Albatta yana
+                kelamiz!"
+              </p>
+              <h4>Aziz Karimov</h4>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-text">
+              <p>
+                "Xizmat ko'rsatish darajasi juda yuqori. Taomlar ham juda
+                mazali."
+              </p>
+              <h4>Nilufar Ahmedova</h4>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-text">
+              <p>
+                "Oilamiz bilan tez-tez kelib turamiz. Bolalar uchun ham qulay
+                joy."
+              </p>
+              <h4>Jamshid Toshmatov</h4>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-dots">
+          <span class="testimonial-dot active" data-index="0"></span>
+          <span class="testimonial-dot" data-index="1"></span>
+          <span class="testimonial-dot" data-index="2"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="aloqa">
+      <div class="container">
+        <h2 class="section-title">Biz bilan bog'laning</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Manzil</h3>
+                <p>Yozyovon tuman, Istirohat bog'i oldi</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3>Telefon</h3>
+                <p>+998 94 198 10 10</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h3>Ish vaqti</h3>
+                <p>Har kuni: 90:00 - 23:00</p>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-telegram"></i></a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <input type="text" id="name" placeholder="Ismingiz" required />
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" placeholder="Email" required />
+              </div>
+              <div class="form-group">
+                <input type="tel" id="phone" placeholder="Telefon" required />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  placeholder="Xabaringiz"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn">Yuborish</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>Lazzat</h2>
+            <p>Eng mazali taomlar faqat bizda</p>
+          </div>
+          <div class="footer-links">
+            <h3>Sahifalar</h3>
+            <ul>
+              <li><a href="#bosh">Bosh sahifa</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#galereya">Galereya</a></li>
+              <li><a href="#oshpazlar">Oshpazlar</a></li>
+              <li><a href="#biz-haqimizda">Biz haqimizda</a></li>
+              <li><a href="#aloqa">Aloqa</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h3>Aloqa</h3>
+            <p>
+              <i class="fas fa-map-marker-alt"></i>Yozyovon tuman, Istirohat
+              bog'i oldi
+            </p>
+            <p><i class="fas fa-phone"></i> +998 94 198 10 10</p>
+            <p><i class="fas fa-envelope"></i> info@lazzat.uz</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            Sayt yaratuvchi
+            <a href="https://t.me/absolutemadrid" style="color: #ff2b40"
+              >Asadbek Tursunaliyev</a
+            >
+          </p>
+          <br />
+          <p>&copy; 2023 Lazzat Restorani. Barcha huquqlar himoyalangan.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
